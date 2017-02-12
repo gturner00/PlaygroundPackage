@@ -1,1 +1,7 @@
 c:\git\PlaygroundPackage\Playground\bin\Debug\Playground.exe.config
+c:\git\PlaygroundPackage\Playground\bin\Debug\Playground.exe
+c:\git\PlaygroundPackage\Playground\bin\Debug\Playground.pdb
+c:\git\PlaygroundPackage\Playground\bin\Debug\DogStatsD-CSharp-Client.dll
+c:\git\PlaygroundPackage\Playground\obj\Debug\Playground.csprojResolveAssemblyReference.cache
+c:\git\PlaygroundPackage\Playground\obj\Debug\Playground.exe
+c:\git\PlaygroundPackage\Playground\obj\Debug\Playground.pdb
