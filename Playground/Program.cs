@@ -7,9 +7,14 @@ using StatsdClient;
 
 namespace Playground
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static int GetRandomTime()
+        {
+            Random random = new Random();
+            return random.Next(0, 60) * 100;
+        }
+        public static void Main(string[] args)
         {
             StatsdClient.StatsdConfig config = new StatsdClient.StatsdConfig()
             {
@@ -24,10 +29,8 @@ namespace Playground
             {
                 DogStatsd.Counter<int>("Run Count", 1);
                 using (DogStatsd.StartTimer("Run Time"))
-                {
-                    Random random = new Random();
-
-                    System.Threading.Thread.Sleep(random.Next(0, 60) * 100);
+                {                    
+                    System.Threading.Thread.Sleep(GetRandomTime());
                 }
                 Console.WriteLine(string.Format("Metric Count {0}", i));
 
